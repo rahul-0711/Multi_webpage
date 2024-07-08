@@ -1,0 +1,249 @@
+/* General body and sidebar styles */
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #E0BFE6;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-right: 2px solid #B59DB5;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.workspace-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #F0E6F5;
+    border-radius: 5px;
+    border: 1px solid #B59DB5;
+}
+
+.tab-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background-color: #C39BD3;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.account a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #F0E6F5;
+    border-radius: 5px;
+    border: 1px solid #B59DB5;
+    margin-top: 20px;
+}
+
+.account a:hover {
+    background-color: #C39BD3;
+}
+
+.account-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #E0BFE6;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #B59DB5;
+}
+
+header input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    border-right: none;
+}
+
+header .search-icon {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 0 5px 5px 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.stat-box:nth-child(1) {
+    background-color: #d7f4d1; /* Color for New Customers */
+}
+
+.stat-box:nth-child(2) {
+    background-color: #D9E6F8; /* Color for Department Activity */
+}
+
+.stat-box:nth-child(3) {
+    background-color: #F4CCCA; /* Color for Total Media Size */
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.table-container {
+    width: 100%;
+}
+
+.customers-header {
+    background-color: #E0F8D8;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.departments-header {
+    background-color: #D9EBF9;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.media-header {
+    background-color: #F4CCCA;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+.media {
+    display: flex;
+    justify-content: space-between;
+    background-color: #9ccdf300;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.media-box {
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 23%;
+    color: white;
+    border: 1px solid #D4A59B; /* Darker border for media stats */
+}
+
+.media-box:nth-child(1) {
+    background-color: #F7E9C1; /* Color for Audio */
+}
+
+.media-box:nth-child(2) {
+    background-color: #F7E9C1; /* Color for Video */
+}
+
+.media-box:nth-child(3) {
+    background-color: #F7E9C1; /* Color for Images */
+}
+
+.media-box:nth-child(4) {
+    background-color: #F7E9C1; /* Color for Files */
+}
+
+.media-tab {
+    background-color: #F4CCCA;
+    padding: 20px;
+    border-radius: 5px;
+    flex-grow: 1;
+    border: 1px solid #D4A59B; /* Darker border for media tab */
+}
+
+.media-header {
+    background-color: #F4CCCA;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
